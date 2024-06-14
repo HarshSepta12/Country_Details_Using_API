@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+.img img {
+    width: 80%;
+}
+.btn{
+    width: 99px;
+    padding: 15px;
+    margin-top: 12px;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 12px;
+    border-radius: 4px;
+}
+.img{
+    width: 50%;
+}
+
+.btn a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn a img{
+    width: 15px;
+}
+.country-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-all-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    column-gap: 16px;
+    max-height: 280px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.border-countries #border{
+    width: 99px;
+    padding: 8px;
+    margin-top: 12px;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+.header-container .header-content p{
+    cursor: pointer;
+}
+
+@media screen and (max-width:950px) {
+    .country-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .country-all-details{
+        align-items: flex-start;
+    }
+    .img img{
+        width: 100%;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .header-container .header-content p{
+        font-size: 12px;
+    }
+    .btn{
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width:710px){
+   .img {
+    width: 80%;
+   }
+}
+@media screen and (max-width:455px){
+   .img {
+    width: 90%;
+   }
+   .country-container{
+    flex-direction: column;
+    gap: 2px;
+   }
+   .country-all-details {
+    max-height: 80%;
+    gap: 0px;
+}
+   .title {
+    font-size: 10px;
+}
+.btn{
+    padding: 5px;
+    width: 71px;
+    font-size: 14px;
+}
+}
+@media screen and (max-width:260px){
+    .header-container .header-content p span{
+        display: none;
+    }
+    .header-container .header-content p i{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:260px){
+    .country-all-details{
+        padding: 10px;
+    }
+}
